@@ -1,0 +1,1 @@
+This basic Terraform demo creates a simple aws ec2 instance.
