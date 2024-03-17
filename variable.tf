@@ -5,7 +5,7 @@ variable "region" {
 
 variable "ami" {
   type    = string
-  default = "ami-0022f774911c1d690"
+  default = "ami-0d7a109bf30624c99"
 }
 
 variable "instance-type" {
@@ -15,10 +15,10 @@ variable "instance-type" {
 
 variable "keypair" {
   type    = string
-  default = "awskeypair"
+  default = "private_key"
 }
 
 variable "name" {
   type    = string
-  default = "Jenkins"
+  default = "test-lab"
 }
