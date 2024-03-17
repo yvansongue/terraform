@@ -1,1 +1,1 @@
-This basic Terraform demo creates a simple aws ec2 instance.
+This basic Terraform code that creates a simple aws ec2 instance.
