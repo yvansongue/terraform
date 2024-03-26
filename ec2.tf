@@ -5,7 +5,7 @@ resource "aws_instance" "terraform-demo" {
     key_name = var.keypair
     tags = {
         Name = var.name
-        Env = "dev"
+        Env = "lab"
     }
 }
 
