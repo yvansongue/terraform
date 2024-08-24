@@ -23,7 +23,7 @@ jobs:
 
     - name: Launch EC2 Instance
       run: |
-        INSTANCE_ID=$(aws ec2 run-instances --image-id=ami-0490fddec0cbeb88b --instance-type=t2.micro --key-name=private_key --security-group-ids=sg-0d2fb3a8d987a55e3 --subnet-id=subnet-07ad299f57f1d7468 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubEC2Instance}]' --query 'Instances[0].InstanceId' --output=text)
+        INSTANCE_ID=$(aws ec2 run-instances --image-id=ami-066784287e358dad1 --instance-type=t2.micro --key-name=private_key --security-group-ids=sg-0d2fb3a8d987a55e3 --subnet-id=subnet-07ad299f57f1d7468 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubEC2Instance}]' --query 'Instances[0].InstanceId' --output=text)
         
         echo "Instance ID: $INSTANCE_ID"
 
