@@ -53,3 +53,4 @@ jobs:
       run: |
         echo "EC2 Instance Public IP is: ${{ env.PUBLIC_IP }}"
 
+
