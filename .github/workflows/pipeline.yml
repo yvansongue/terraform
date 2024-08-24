@@ -26,7 +26,7 @@ jobs:
         INSTANCE_ID=$(aws ec2 run-instances \
           --image-id ami-0490fddec0cbeb88b \  # Replace with your desired AMI ID
           --instance-type t2.micro \  # Specify the instance type
-          --key-name private_key \  # Replace with your key pair name
+          --key-name your-key-pair \  # Replace with your key pair name
           --security-group-ids sg-0d2fb3a8d987a55e3 \  # Replace with your security group ID
           --subnet-id subnet-07ad299f57f1d7468 \  # Replace with your subnet ID
           --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubEC2Instance}]' \
